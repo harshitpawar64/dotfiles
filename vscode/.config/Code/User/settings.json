@@ -1,0 +1,134 @@
+{
+    // Font Family
+    "editor.fontFamily": "Cascadia Code NF",
+    "terminal.integrated.fontFamily": "Cascadia Code NF",
+    "debug.console.fontFamily": "Cascadia Code NF",
+
+    // Font Size
+    "editor.fontSize": 18,
+    "terminal.integrated.fontSize": 18,
+    "debug.console.fontSize": 18,
+
+    // Font Ligatures
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss19', 'ss20'",
+    "terminal.integrated.fontLigatures.enabled": true,
+
+    // Smooth Scrolling
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+
+    // Cursor
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+
+    // Themes
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.iconTheme": "material-icon-theme",
+
+    // Activity Bar
+    "workbench.activityBar.location": "top",
+
+    // Minimap
+    "editor.minimap.enabled": false,
+
+    // Auto Save
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+
+    // Linked editing (useful for - HTML/XML and JSX)
+    "editor.linkedEditing": true,
+
+    // Scrollbar Size
+    "editor.scrollbar.verticalScrollbarSize": 10,
+    "editor.scrollbar.horizontalScrollbarSize": 10,
+
+    // Hover
+    "editor.hover.enabled": true,
+    "editor.hover.delay": 800,
+
+    // Format files
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    // Git
+    "git.autofetch": true,
+
+    // Diff Editor
+    "diffEditor.experimental.useTrueInlineView": true,
+    "diffEditor.experimental.showMoves": true,
+
+    // Python
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff", // `uv tool install ruff@latest`
+        "editor.formatOnSave": true
+    },
+    "python.analysis.typeCheckingMode": "standard",
+
+    // Token Color Customizations
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    // --- General Language Elements ---
+                    "comment",                      // Comments
+                    "keyword",                      // Keywords
+                    "storage",                      // ex: 'static', 'public', 'private', 'protected'
+                    "storage.type",                 // ex: 'class', 'function', 'var', 'let', 'const', 'enum', 'struct', 'type'
+                    "storage.modifier",             // ex: 'static', 'readonly', 'async'
+                    "entity.name.type",             // Class names, interface names, type aliases
+                    "entity.other.inherited-class", // Inherited classes/interfaces
+                    "variable.language",            // Built-in language variables
+                    "constant.language",            // Other built-in constants
+                    "support.type",                 // Built-in types from libraries/frameworks
+                    "support.class",                // Built-in classes/framework classes
+                    "support.variable",             // Built-in global variables
+
+                    // --- Specific to certain languages ---
+                    "entity.other.attribute-name",  // HTML/JSX attributes
+                    "markup.quote",                 // Markdown blockquotes
+                    "markup.italic",                // Explicitly italicized text in Markdown
+                    "markup.bold.italic",           // Bold and italic text in Markdown
+                    "punctuation.definition.italic",// Punctuation related to italic markdown
+                    "punctuation.definition.bold",  // Punctuation related to bold markdown
+                    "support.function",             // Framework-specific functions that are often "meta"
+                    "meta.decorator",               // Decorators in TypeScript/Python
+                    "entity.name.tag.yaml",         // Tags in YAML/Helm
+                    "keyword.operator.new",         // The 'new' keyword
+                    "keyword.operator.expression",  // Operators used in expressions
+                    "variable.parameter"            // Function parameters
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "invalid",                                  // Errors
+                    "keyword.operator",                         // Operators ex: (+, -, *, =, ==, ===, <, >, &&, ||, etc.)
+                    "constant.numeric",                         // Numbers
+                    "punctuation.definition.string",            // Quotes around strings
+                    "punctuation.definition.tag",               // Angle brackets for HTML/JSX tags
+                    "support.type.property-name.json.comments"  // JSON properties
+                ],
+                "settings": {
+                    "fontStyle": ""                             // Explicitly removes italic style
+                }
+            }
+        ]
+    },
+
+    // Native menu bar
+    "window.menuStyle": "native",
+
+    // Copilot
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
+}
